@@ -14,7 +14,9 @@ Tree={
 }
 def dfs_recursive(node, visited=None):
     if visited is None:
-        visited = set() 
+        visited = set()
+    if len(visited)==7:
+        return visited
     visited.add(node)
     print(node, end=' ')  
 
